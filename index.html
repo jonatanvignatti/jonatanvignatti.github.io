@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Jonatan Vignatti – Fenomenología &amp; Astropartículas – Departamento de Física ULS</title>
+    <style>
+        :root {
+            --azul-oscuro: #003366;
+            --azul-medio: #004080;
+            --amarillo: #ffcc00;
+            --fondo: #f4f4f9;
+            --blanco: #fff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--fondo);
+            color: #333;
+        }
+        header {
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--amarillo);
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 0.4rem 0 0; font-size: 1.15rem; opacity: 0.9; }
+        nav {
+            background: var(--azul-medio);
+            color: var(--blanco);
+            padding: 0.8rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a { color: var(--blanco); text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; color: var(--amarillo); }
+        .container {
+            max-width: 920px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--blanco);
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        h2 {
+            color: var(--azul-oscuro);
+            border-bottom: 3px solid var(--amarillo);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+        }
+        h2:first-child { margin-top: 0; }
+        ul { list-style-type: square; padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        /* ---------- Publications ---------- */
+        .pub-list { list-style: none; padding: 0; counter-reset: pub; }
+        .pub-list li {
+            counter-increment: pub;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-left: 4px solid var(--azul-medio);
+            position: relative;
+        }
+        .pub-list li::before {
+            content: counter(pub) ".";
+            font-weight: bold;
+            color: var(--azul-medio);
+            margin-right: 0.5rem;
+        }
+        .pub-title { font-weight: bold; }
+        .pub-journal { font-style: italic; color: #555; }
+        .pub-links a {
+            display: inline-block;
+            margin-right: 0.6rem;
+            font-size: 0.85rem;
+            color: var(--azul-medio);
+            text-decoration: none;
+            border: 1px solid var(--azul-medio);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .pub-links a:hover { background: var(--azul-medio); color: var(--blanco); }
+        .pub-collab {
+            display: inline-block;
+            font-size: 0.8rem;
+            background: var(--amarillo);
+            color: #333;
+            padding: 1px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        /* ---------- Tags líneas ---------- */
+        .tag {
+            display: inline-block;
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 3px 12px;
+            border-radius: 14px;
+            font-size: 0.85rem;
+            margin: 3px 4px;
+        }
+        .tags { margin-top: 0.5rem; }
+
+        footer {
+            background: var(--azul-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        footer a { color: var(--amarillo); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dr. Jonatan Vignatti</h1>
+    <p>Investigador – Fenomenología de Partículas &amp; Astropartículas</p>
+    <p>Departamento de Física · Universidad de La Serena (ULS)</p>
+</header>
+
+<nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#investigacion">Investigación</a>
+    <a href="#publicaciones">Publicaciones</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+
+    <!-- ==================== SOBRE MÍ ==================== -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            Bienvenido a la página del grupo de investigación del Dr. Jonatan Vignatti
+            en el Departamento de Física de la Universidad de La Serena.
+            Mi trabajo se sitúa en la intersección entre la <strong>fenomenología de la física de partículas</strong>
+            y la <strong>astrofísica de altas energías</strong>, buscando conectar los modelos teóricos
+            con las observaciones en aceleradores y observatorios de rayos gamma.
+        </p>
+        <p>
+            Obtuve mi doctorado en la Universidad Técnica Federico Santa María (Valparaíso),
+            bajo la supervisión de Sergey Kovalenko. Soy miembro de la colaboración
+            <strong>CTAO (Cherenkov Telescope Array Observatory)</strong>.
+        </p>
+        <p>
+            ORCID: <a href="https://orcid.org/0000-0002-1494-9562" target="_blank">0000-0002-1494-9562</a> ·
+            <a href="https://inspirehep.net/authors/2016167" target="_blank">INSPIRE-HEP</a>
+        </p>
+    </section>
+
+    <!-- ==================== INVESTIGACIÓN ==================== -->
+    <section id="investigacion">
+        <h2>Líneas de Investigación</h2>
+        <ul>
+            <li><strong>Fenomenología del Modelo Estándar Extendido:</strong> Modelos con simetrías de sabor discretas (S₃), sectores de Higgs extendidos (modelos multi-doblete) y generación de masas de leptones.</li>
+            <li><strong>Violación de Sabor Leptónico (LFV):</strong> Efectos del grupo de renormalización (RGE) en decaimientos leptónicos y mesónicos que violan sabor.</li>
+            <li><strong>Materia Oscura:</strong> Búsquedas de materia oscura en galaxias enanas esferoidales y señales espectrales con el CTAO.</li>
+            <li><strong>Astrofísica de Altas Energías:</strong> Ondas gravitacionales y contrapartes en rayos gamma, PeVatrones galácticos, fuentes transitorias y estrategias observacionales con el CTA.</li>
+        </ul>
+        <div class="tags">
+            <span class="tag">hep-ph</span>
+            <span class="tag">astro-ph</span>
+            <span class="tag">BSM</span>
+            <span class="tag">Dark Matter</span>
+            <span class="tag">CTA / CTAO</span>
+            <span class="tag">LFV</span>
+        </div>
+    </section>
+
+    <!-- ==================== PUBLICACIONES ==================== -->
+    <section id="publicaciones">
+        <h2>Publicaciones (16)</h2>
+        <p>Lista completa en <a href="https://inspirehep.net/authors/2016167?ui-citation-summary=true" target="_blank">INSPIRE-HEP</a>.</p>
+
+        <ol class="pub-list">
+
+            <!-- 1 -->
+            <li>
+                <span class="pub-title">Chasing Gamma-Ray Signals from Binary Neutron Star Coalescences with the Cherenkov Telescope Array: Prospects and Observing Strategies</span><br>
+                <span class="pub-collab">CTAO Consortium</span><br>
+                <span class="pub-journal">Astrophys. J. 1004 (2026)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.3847/1538-4357/ae658c" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2604.08748" target="_blank">arXiv:2604.08748</a>
+                </span>
+            </li>
+
+            <!-- 2 -->
+            <li>
+                <span class="pub-title">Prospects for dark matter observations in dwarf spheroidal galaxies with the Cherenkov Telescope Array Observatory</span><br>
+                <span class="pub-collab">CTAO</span><br>
+                <span class="pub-journal">Mon. Not. Roy. Astron. Soc. 544 (2025)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1093/mnras/staf1798" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2508.19120" target="_blank">arXiv:2508.19120</a>
+                </span>
+            </li>
+
+            <!-- 3 -->
+            <li>
+                <span class="pub-title">Phenomenology of an Extended 1+2 Higgs Doublet Model with S₃ Family Symmetry</span><br>
+                <span class="pub-journal">Eur. Phys. J. C 84 (2024)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1140/epjc/s10052-024-13501-2" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2408.01497" target="_blank">arXiv:2408.01497</a>
+                </span>
+            </li>
+
+            <!-- 4 -->
+            <li>
+                <span class="pub-title">Galactic transient sources with the Cherenkov Telescope Array Observatory</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">Mon. Not. Roy. Astron. Soc. 540 (2025)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1093/mnras/staf655" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2405.04469" target="_blank">arXiv:2405.04469</a>
+                </span>
+            </li>
+
+            <!-- 5 -->
+            <li>
+                <span class="pub-title">Dark matter line searches with the Cherenkov Telescope Array</span><br>
+                <span class="pub-collab">CTAO</span><br>
+                <span class="pub-journal">JCAP 07 (2024)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1088/1475-7516/2024/07/047" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2403.04857" target="_blank">arXiv:2403.04857</a>
+                </span>
+            </li>
+
+            <!-- 6 -->
+            <li>
+                <span class="pub-title">Prospects for a survey of the galactic plane with the Cherenkov Telescope Array</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">JCAP 10 (2024)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1088/1475-7516/2024/10/081" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2310.02828" target="_blank">arXiv:2310.02828</a>
+                </span>
+            </li>
+
+            <!-- 7 -->
+            <li>
+                <span class="pub-title">Chasing Gravitational Waves with the Cherenkov Telescope Array</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">PoS ICRC2023 (2023)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.22323/1.444.1534" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2310.07413" target="_blank">arXiv:2310.07413</a>
+                </span>
+            </li>
+
+            <!-- 8 -->
+            <li>
+                <span class="pub-title">Interpolation of Instrument Response Functions for the Cherenkov Telescope Array in the Context of pyirf</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">PoS ICRC2023 (2023)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.22323/1.444.0618" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2309.16488" target="_blank">arXiv:2309.16488</a>
+                </span>
+            </li>
+
+            <!-- 9 -->
+            <li>
+                <span class="pub-title">Pybkgmodel – a background modelling toolbox for the CTA</span><br>
+                <span class="pub-collab">CTA-LST, CTA Consortium</span><br>
+                <span class="pub-journal">PoS ICRC2023 (2023)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.22323/1.444.0894" target="_blank">DOI</a>
+                </span>
+            </li>
+
+            <!-- 10 -->
+            <li>
+                <span class="pub-title">Dark matter searches in dwarf spheroidal galaxies with the Cherenkov Telescope Array</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">PoS ICRC2023 (2023)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.22323/1.444.1366" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2309.09607" target="_blank">arXiv:2309.09607</a>
+                </span>
+            </li>
+
+            <!-- 11 -->
+            <li>
+                <span class="pub-title">Sensitivity of the Cherenkov Telescope Array to spectral signatures of hadronic PeVatrons with application to Galactic Supernova Remnants</span><br>
+                <span class="pub-collab">CTA Consortium</span><br>
+                <span class="pub-journal">Astropart. Phys. 150 (2023)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1016/j.astropartphys.2023.102850" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2303.15007" target="_blank">arXiv:2303.15007</a>
+                </span>
+            </li>
+
+            <!-- 12 -->
+            <li>
+                <span class="pub-title">CTA – the World's largest ground-based gamma-ray observatory</span><br>
+                <span class="pub-collab">CTA Observatory, CTA Consortium, LST</span><br>
+                <span class="pub-journal">PoS ICRC2021 (2022)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.22323/1.395.0005" target="_blank">DOI</a>
+                </span>
+            </li>
+
+            <!-- 13 -->
+            <li>
+                <span class="pub-title">Neutrino mass models and RGE contribution to LFV leptonic decays</span><br>
+                <span class="pub-journal">(2022)</span><br>
+                <span class="pub-links">
+                    <a href="https://inspirehep.net/literature/2155636" target="_blank">INSPIRE</a>
+                </span>
+            </li>
+
+            <!-- 14 -->
+            <li>
+                <span class="pub-title">RGE effects on the LFV scale from meson decays</span><br>
+                <span class="pub-journal">Eur. Phys. J. C 82 (2022)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1140/epjc/s10052-022-10206-2" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/2101.11692" target="_blank">arXiv:2101.11692</a>
+                </span>
+            </li>
+
+            <!-- 15 -->
+            <li>
+                <span class="pub-title">Generating lepton masses and mixings with a heavy vector doublet</span><br>
+                <span class="pub-journal">J. Phys. G 46 (2019)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.1088/1361-6471/ab4499" target="_blank">DOI</a>
+                    <a href="https://arxiv.org/abs/1807.05321" target="_blank">arXiv:1807.05321</a>
+                </span>
+            </li>
+
+            <!-- 16 -->
+            <li>
+                <span class="pub-title">Dinámica del oscilador de Dirac</span><br>
+                <span class="pub-journal">Rev. Invest. Fís. 19 (2016)</span><br>
+                <span class="pub-links">
+                    <a href="https://doi.org/10.15381/rif.v19i1.13553" target="_blank">DOI</a>
+                </span>
+            </li>
+
+        </ol>
+    </section>
+
+    <!-- ==================== EQUIPO ==================== -->
+    <section id="equipo">
+        <h2>Equipo de Investigación</h2>
+        <ul>
+            <li><strong>Dr. Jonatan Vignatti</strong> – Investigador Principal</li>
+            <li><em>Postdocs, estudiantes de doctorado, magíster y pregrado – por definir</em></li>
+        </ul>
+        <p><em>¡Siempre estamos buscando estudiantes motivados! Si te interesa trabajar con nosotros, no dudes en contactarnos.</em></p>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> jonatan.vignattim@userena.cl</p>
+        <p><strong>Oficina:</strong> Departamento de Física, Facultad de Ciencias, Universidad de La Serena</p>
+        <p><strong>Dirección:</strong> Av. Cisternas 1200, La Serena, Región de Coquimbo, Chile</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Dr. Jonatan Vignatti · Departamento de Física · <a href="https://www.userena.cl" target="_blank">Universidad de La Serena</a></p>
+    <p>
+        <a href="https://inspirehep.net/authors/2016167" target="_blank">INSPIRE</a> ·
+        <a href="https://orcid.org/0000-0002-1494-9562" target="_blank">ORCID</a>
+    </p>
+</footer>
+
+</body>
+</html>
